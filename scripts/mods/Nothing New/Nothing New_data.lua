@@ -10,6 +10,7 @@ return {
 				setting_id = "turn_on_cleaner",
 				type = "checkbox",
 				default_value = false,
+        tooltip = "nothing_new_tooltip",
         get = function()
           mod:get("turn_on_cleaner")
         end,

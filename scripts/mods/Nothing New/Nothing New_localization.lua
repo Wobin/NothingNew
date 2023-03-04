@@ -7,5 +7,8 @@ return {
 	},
   turn_on_cleaner = {
     en = "Remove new item indicators"
-  }
+  },
+  nothing_new_tooltip = {
+    en = "This will auto-toggle off"
+    }
 }
