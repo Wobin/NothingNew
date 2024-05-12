@@ -14,5 +14,8 @@ return {
   nothing_new_tooltip = {
     en = "This will auto-toggle off",
 		["zh-cn"] = "此选项会自动关闭",
+  },
+  ignore_claim = {
+    en = "Suppress the 'New Penance' notification in the Mourningstar",
   }
 }

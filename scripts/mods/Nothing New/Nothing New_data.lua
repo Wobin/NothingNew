@@ -11,12 +11,11 @@ return {
 				type = "checkbox",
 				default_value = false,
         tooltip = "nothing_new_tooltip",
-        get = function()
-          mod:get("turn_on_cleaner")
-        end,
-        set = function(new_value)
-          mod:set("turn_on_cleaner", new_value, true)        
-        end,
+			},
+      	{
+				setting_id = "ignore_claim",
+				type = "checkbox",
+				default_value = false,        
 			}
 		}
 	}
