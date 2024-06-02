@@ -17,5 +17,6 @@ return {
   },
   ignore_claim = {
     en = "Suppress the 'New Penance' notification in the Mourningstar",
+    ["zh-cn"] = "在哀星号上隐藏新苦修提醒",
   }
 }
