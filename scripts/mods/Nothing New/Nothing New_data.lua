@@ -16,7 +16,13 @@ return {
 				setting_id = "ignore_claim",
 				type = "checkbox",
 				default_value = false,        
-			}
+			},
+      {
+        setting_id = "hide_mastery_notification",
+        type = "checkbox",
+        default_value = false,
+        },
+      
 		}
 	}
 }

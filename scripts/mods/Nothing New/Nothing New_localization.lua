@@ -17,5 +17,8 @@ return {
   },
   ignore_claim = {
     en = "Suppress the 'New Penance' notification in the Mourningstar",
-  }
+  },
+  hide_mastery_notification = {
+    en = "Hide the 'Masteries' notification indicator in the Inventory screen"
+    }
 }

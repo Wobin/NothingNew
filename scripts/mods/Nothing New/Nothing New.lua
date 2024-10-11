@@ -1,26 +1,29 @@
 --[[
 Title: Nothing New
 Author: Wobin
-Date: 12/05/2024
+Date: 11/10/2024
 Repository: https://github.com/Wobin/NothingNew
-Version 2.0
+Version 3.0
 ]]--
+
 local ItemUtils = require("scripts/utilities/items")
 local mod = get_mod("Nothing New")
-
-
-mod.remove_event = function(self, objective)  
-  if mod:get("ignore_claim") and objective:name() == "Level 7 Introduce Objective - Penances / Track" then
-    mod.Feed._remove_objective(mod.Feed, objective:name())    
-  end
-end
+mod.version = "3.0"
 
 mod.on_all_mods_loaded = function()  
-    mod:hook_safe("HudElementMissionObjectiveFeed", "init", function(self)        
-      mod.Feed = self
-      mod.Feed._unregister_events(mod)
-      Managers.event:register(mod, "event_add_mission_objective", "remove_event")        
+    mod:info(mod.version)
+    mod:hook_safe("HudElementMissionObjectiveFeed", "_add_objective", function(self, objective, ui_renderer, locally_added)        
+      if not mod.Feed then mod.Feed = self end
+      if mod:get("ignore_claim") and objective:name() == "Level 7 Introduce Objective - Penances / Track" then
+            self._remove_objective(self, objective:name())    
+      end
     end)  
+    mod:hook_require("scripts/utilities/mastery", function(mastery)
+      mod:hook(mastery, "has_available_points", function(func, data, traits)
+        if mod:get("hide_mastery_notification") then return false end
+        return func(data, traits)
+      end)
+    end)
 end
 
 
