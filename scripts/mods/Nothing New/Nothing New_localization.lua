@@ -17,8 +17,9 @@ return {
   },
   ignore_claim = {
     en = "Suppress the 'New Penance' notification in the Mourningstar",
+    ["zh-cn"] = "在哀星号上隐藏新苦修提醒",  
   },
   hide_mastery_notification = {
     en = "Hide the 'Masteries' notification indicator in the Inventory screen"
-    }
+    },
 }
