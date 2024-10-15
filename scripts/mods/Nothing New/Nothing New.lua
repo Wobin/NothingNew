@@ -3,12 +3,12 @@ Title: Nothing New
 Author: Wobin
 Date: 11/10/2024
 Repository: https://github.com/Wobin/NothingNew
-Version 3.0
+Version 3.0.1
 ]]--
 
 local ItemUtils = require("scripts/utilities/items")
 local mod = get_mod("Nothing New")
-mod.version = "3.0"
+mod.version = "3.0.1"
 
 mod.on_all_mods_loaded = function()  
     mod:info(mod.version)
