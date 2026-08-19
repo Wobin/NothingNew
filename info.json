@@ -1,0 +1,27 @@
+{
+	"name": "Nothing New",
+	"description": "Cleans up the 'new item' notification dot",
+	"version": "3.1.0",
+	"author": "Wobin",
+	"homepage": "https://www.nexusmods.com/warhammer40kdarktide/mods/51",
+	"source": "https://github.com/Wobin/NothingNew",
+	"funding": {
+		"kofi": "https://ko-fi.com/wobin_dwonderdog"
+	},
+	"nexusId": "51",
+	"localization": {
+		"ru": {
+			"name": "Ничего нового",
+			"description": "Nothing New - Убирает светящуюся точку уведомления «новый предмет"
+		},
+		"zh-cn": {
+			"name": "没有新物品",
+			"description": "清除所有“新物品”黄点"
+		}
+	},
+	"order": {
+		"require": [],
+		"this_after": [],
+		"this_before": []
+	}
+}

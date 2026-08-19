@@ -14,10 +14,15 @@ return {
     ["zh-cn"] = "清除新物品黄点",
     ru = "Удалить индикаторы новых предметов",
   },
-  nothing_new_tooltip = {
-    en = "This will auto-toggle off",
-    ["zh-cn"] = "此选项会自动关闭",
-    ru = "Это автоматическое отключение",
+  turn_on_cleaner_button = {
+    en = "Clear now",
+    ["zh-cn"] = "立即清除",
+    ru = "Очистить",
+  },
+  hide_new_item_indicator = {
+    en = "Never show the 'new item' indicator anywhere",
+    ["zh-cn"] = "始终隐藏“新物品”提示点",
+    ru = "Никогда не показывать индикатор «новый предмет»",
   },
   ignore_claim = {
     en = "Suppress the 'New Penance' notification in the Mourningstar",
